@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+#sidebar {
+  width: 320px;
+  background: #1e1e2f;
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow-y: auto;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+#sidebar h2 {
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+  background: #29293d;
+  font-size: 1.4em;
+  border-bottom: 1px solid #333;
+}
+
+/* Search section */
+#searchBox {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 12px auto;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+#searchBtn {
+  width: calc(100% - 20px);
+  margin: 0 auto 15px;
+  padding: 10px;
+  background: #ff7043;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+#searchBtn:hover {
+  background: #ff5722;
+}
+
+/* Places List */
+#placesList {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+#placesList li {
+  background: #2b2b3d;
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+#placesList li:hover {
+  background: #383852;
+  transform: scale(1.03);
+}
+
+#placesList li strong {
+  display: block;
+  font-size: 15px;
+  color: #ffcc80;
+}
+
+#placesList li span {
+  font-size: 13px;
+  color: #bbb;
+}
+
+/* Map area */
+#map {
+  flex: 1;
+  height: 100vh;
+}
