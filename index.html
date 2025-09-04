@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Finder</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="sidebar">
+    <h2>Cafe Finder</h2>
+    <input type="text" id="searchBox" placeholder="Enter a city...">
+    <button id="searchBtn">Search</button>
+    <ul id="placesList"></ul>
+  </div>
+
+  <div id="map"></div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Bouncing Marker Plugin -->
+  <script src="https://unpkg.com/leaflet.smoothmarkerbouncing"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
+
